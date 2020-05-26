@@ -11,27 +11,36 @@
 
 .nav ul {
   list-style-type: none;
-  position: sticky;
   overflow: hidden; 
   background-color: color(primary);
   top: 0;
   z-index: 11111111111;
-  padding-left: 10px;
-  @include tablet {
-   padding-left: 40px;
-  }
-  @include laptop {
+  padding: 0 20px 0 20px;
+    @include tablet {
     padding-left: 40px;
-  }
+    }
+    @include laptop {
+      padding-left: 40px;
+    }
 }
 
 .nav li {
-  display:inline;
-  border-right: 1px solid color(primary-light);
+  display:list-item;
+  margin: 1rem 0 1rem 0;
+  border-bottom: 1px solid color(primary-light);
+  @include tablet {
+    display:list-item;
+   }
+   @include laptop {
+    display:inline;
+    border-right: 1px solid color(primary-light);
+    border-bottom: none;
+   }
 }
 
 .nav li:last-child {
  border-right: none;
+ border-bottom: none;
 }
 
 
@@ -42,7 +51,13 @@
   text-align: center;
   padding: 5px 16px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  @include tablet {
+    font-size: 2rem;
+   }
+   @include laptop {
+    font-size: 2rem;
+   }
 }
 
 .nav a:hover {

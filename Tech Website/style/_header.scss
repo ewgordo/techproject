@@ -72,5 +72,11 @@
 }
 
 .header img {
-  height: 15rem;
+  height: 12rem;
+  @include tablet {
+    height: 15rem;
+   }
+   @include laptop {
+    height: 15rem;
+   }
 }

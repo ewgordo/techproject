@@ -96,7 +96,19 @@ html {
 }
 
 .header img {
-  height: 15rem;
+  height: 12rem;
+}
+
+@media (min-width: 900px) {
+  .header img {
+    height: 15rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header img {
+    height: 15rem;
+  }
 }
 
 .media {
@@ -107,7 +119,7 @@ html {
 }
 
 .media i {
-  font-size: 5rem;
+  font-size: 8rem;
   color: #c0b366;
   margin-top: 5rem;
 }
@@ -133,7 +145,19 @@ html {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .media h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .media h1 {
+    font-size: 2rem;
+  }
 }
 
 .social {
@@ -160,6 +184,19 @@ html {
   left: 0;
   -webkit-filter: drop-shadow(10px -4px 4px #000000);
           filter: drop-shadow(10px -4px 4px #000000);
+  height: 5rem;
+}
+
+@media (min-width: 900px) {
+  .media img {
+    height: 8rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .media img {
+    height: 8rem;
+  }
 }
 
 .nav .topnav {
@@ -169,13 +206,11 @@ html {
 
 .nav ul {
   list-style-type: none;
-  position: -webkit-sticky;
-  position: sticky;
   overflow: hidden;
   background-color: #c0b366;
   top: 0;
   z-index: 11111111111;
-  padding-left: 10px;
+  padding: 0 20px 0 20px;
 }
 
 @media (min-width: 900px) {
@@ -191,12 +226,28 @@ html {
 }
 
 .nav li {
-  display: inline;
-  border-right: 1px solid #4e4e50;
+  display: list-item;
+  margin: 1rem 0 1rem 0;
+  border-bottom: 1px solid #4e4e50;
+}
+
+@media (min-width: 900px) {
+  .nav li {
+    display: list-item;
+  }
+}
+
+@media (min-width: 1100px) {
+  .nav li {
+    display: inline;
+    border-right: 1px solid #4e4e50;
+    border-bottom: none;
+  }
 }
 
 .nav li:last-child {
   border-right: none;
+  border-bottom: none;
 }
 
 .nav li a {
@@ -206,7 +257,19 @@ html {
   text-align: center;
   padding: 5px 16px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .nav li a {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .nav li a {
+    font-size: 2rem;
+  }
 }
 
 .nav a:hover {
@@ -220,17 +283,29 @@ html {
 
 .annoucements {
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   color: black;
 }
 
 .newshead h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
   padding: 3rem;
   background-color: #c0b366;
+}
+
+@media (min-width: 900px) {
+  .newshead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .newshead h1 {
+    font-size: 3rem;
+  }
 }
 
 .news {
@@ -239,7 +314,7 @@ html {
   padding: 10px;
   float: left;
   width: 50%;
-  height: 50%;
+  margin-bottom: 3rem;
 }
 
 .news h1 {
@@ -247,10 +322,36 @@ html {
   font-size: 2rem;
 }
 
+@media (min-width: 900px) {
+  .news h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .news h1 {
+    font-size: 2rem;
+  }
+}
+
 .news p {
   font-family: 'Open Sans', sans-serif;
-  padding: 0 5rem 3rem 5rem;
-  font-size: 1.5rem;
+  padding: 0 .5rem 2rem .5rem;
+  font-size: 13px;
+}
+
+@media (min-width: 900px) {
+  .news p {
+    padding: 0 5rem 3rem 5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .news p {
+    padding: 0 5rem 3rem 5rem;
+    font-size: 1.5rem;
+  }
 }
 
 .news a {
@@ -270,12 +371,31 @@ html {
   font-family: 'Montserrat', sans-serif;
   border: 3px solid black;
   color: black;
-  padding: 15px 32px;
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 900px) {
+  .viewall {
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .viewall {
+    padding: 15px 32px;
+    font-size: 16px;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
 }
 
 .sps {
@@ -286,8 +406,22 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 30rem;
-  margin: 10rem;
+  height: 20rem;
+  margin: 5rem 1rem 5rem 1rem;
+}
+
+@media (min-width: 900px) {
+  .sps {
+    height: 30rem;
+    margin: 10rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .sps {
+    height: 30rem;
+    margin: 10rem;
+  }
 }
 
 .left {
@@ -308,10 +442,24 @@ html {
 }
 
 #qq {
-  width: 100%;
+  width: 80%;
   height: 33.333%;
   border-bottom: 2px solid white;
-  margin-right: 4rem;
+  margin: 0 2rem 0 2rem;
+}
+
+@media (min-width: 900px) {
+  #qq {
+    width: 80%;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  #qq {
+    width: 100%;
+    margin-right: 4rem;
+  }
 }
 
 #qq:last-child {
@@ -331,8 +479,20 @@ html {
   text-align: center;
   padding: 5px 16px;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 2rem;
+}
+
+@media (min-width: 900px) {
+  .left a {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .left a {
+    font-size: 3rem;
+  }
 }
 
 #qq:hover {
@@ -385,29 +545,92 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border: 3px solid #c0b366;
-  width: 50%;
+  width: 85%;
   margin: 5rem auto;
 }
 
+@media (min-width: 900px) {
+  .seagull {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .seagull {
+    width: 50%;
+  }
+}
+
 .text {
-  margin-right: 18rem;
+  margin-right: 4rem;
+}
+
+@media (min-width: 900px) {
+  .text {
+    margin-right: 18rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .text {
+    margin-right: 18rem;
+  }
 }
 
 .seagull h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding-left: 3rem;
+}
+
+@media (min-width: 900px) {
+  .seagull h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .seagull h1 {
+    font-size: 3rem;
+  }
 }
 
 .seagull p {
   font-family: 'Open Sans', sans-serif;
-  padding: 3rem;
+  padding: 4rem;
   font-size: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .seagull p {
+    padding: 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .seagull p {
+    padding: 4rem;
+    font-size: 1.5rem;
+  }
 }
 
 .seagull img {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 20rem;
+  height: 10rem;
+}
+
+@media (min-width: 900px) {
+  .seagull img {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .seagull img {
+    height: 20rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

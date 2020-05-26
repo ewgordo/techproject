@@ -2,8 +2,16 @@
 .sps {
     display: flex;
     flex-direction: row;
-    height: 30rem;
-    margin: 10rem;
+    height: 20rem;
+    margin: 5rem 1rem 5rem 1rem;
+    @include tablet {
+        height: 30rem;
+        margin: 10rem;
+       }
+    @include laptop {
+        height: 30rem;
+        margin: 10rem;
+       }
 }
 
 .left {
@@ -15,10 +23,18 @@
 }
 
 #qq {
-    width:100%;
+    width: 80%;
     height: 33.333%;
     border-bottom: 2px solid white;
-    margin-right: 4rem;
+    margin: 0 2rem 0 2rem; 
+    @include tablet {
+        width:80%;
+        margin-right: 4rem;
+       }
+    @include laptop {
+        width:100%;
+        margin-right: 4rem;;
+       }    
 }
 
 #qq:last-child {
@@ -39,8 +55,14 @@
   text-align: center;
   padding: 5px 16px;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-top: 2rem;
+    @include tablet {   
+        font-size: 3rem;
+   }
+    @include laptop {
+        font-size: 3rem;
+   }
 }
 
 #qq:hover {

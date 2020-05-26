@@ -11,7 +11,7 @@
     background-size: cover;
 }
 .media i {
-    font-size: 5rem;
+    font-size: 8rem;
     color: color(primary);
     margin-top: 5rem;
         @include tablet{
@@ -32,7 +32,13 @@
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 3px;
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    @include tablet{
+        font-size: 2rem;
+    }
+    @include desktop{
+        font-size: 2rem;
+      }
 }
 
 .social {
@@ -51,4 +57,12 @@
     bottom: 0;
     left:0;
     filter: drop-shadow(10px -4px 4px #000000);
+    height: 5rem;
+    @include tablet{
+        height: 8rem;
+    }
+    @include desktop{
+        height: 8rem;
+      }
+    
 }
