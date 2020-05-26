@@ -1,0 +1,76 @@
+@import "_variables.scss";
+
+.header {
+  position: relative;
+  height: 50vh;
+   background-image: linear-gradient(
+      to right bottom,
+      rgba(0,0,0, 0.5),
+      rgba(0,0,0, 0.5)),
+    url(../media/school.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Cabin', sans-serif;
+  margin: 0;
+  padding: 0;
+  @include laptop{
+    height: 80vh;
+    margin: 0;
+  }
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  z-index: 11111111;
+}
+
+.heading-primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+.heading-primary-main {
+  font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    @include tablet {
+      font-size: 6rem;
+      letter-spacing: 1.8rem;
+    }
+    @include laptop {
+      font-size: 10rem;
+      letter-spacing: 1rem;
+    }
+  }
+  
+  .heading-primary-sub {
+    font-size: 1.5rem;
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    @include laptop {
+      font-size: 3rem;
+    }
+  }
+}
+
+.header img {
+  height: 15rem;
+}

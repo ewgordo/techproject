@@ -1,0 +1,54 @@
+@import "./_variables.scss";
+
+
+.media {
+    position: relative;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)),
+      url(../media/desk.jpg);
+    background-size: cover;
+}
+.media i {
+    font-size: 5rem;
+    color: color(primary);
+    margin-top: 5rem;
+        @include tablet{
+            font-size: 10rem;
+        }
+        @include desktop{
+            font-size: 10rem;
+          }
+
+}
+
+.media h1 {
+    display: inline-block;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background-color: color(primary);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    color: black;
+    font-size: 2rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+}
+
+.media img{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    filter: drop-shadow(10px -4px 4px #000000);
+}

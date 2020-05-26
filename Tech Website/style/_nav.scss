@@ -1,0 +1,51 @@
+@import "./_variables.scss";
+
+
+.nav {
+  .topnav {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+
+.nav ul {
+  list-style-type: none;
+  position: sticky;
+  overflow: hidden; 
+  background-color: color(primary);
+  top: 0;
+  z-index: 11111111111;
+  padding-left: 10px;
+  @include tablet {
+   padding-left: 40px;
+  }
+  @include laptop {
+    padding-left: 40px;
+  }
+}
+
+.nav li {
+  display:inline;
+  border-right: 1px solid color(primary-light);
+}
+
+.nav li:last-child {
+ border-right: none;
+}
+
+
+.nav li a {
+  display:inline-block;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
