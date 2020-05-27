@@ -1,0 +1,26 @@
+{
+  "name": "techproject",
+  "version": "1.0.0",
+  "description": "tech project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewgordo/techproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewgordo/techproject/issues"
+  },
+  "homepage": "https://github.com/ewgordo/techproject#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
